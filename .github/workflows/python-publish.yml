@@ -1,0 +1,13 @@
+name: Install and Call Python Script
+
+on: 
+  push: 
+  workflow_dispatch: 
+  
+
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print echo
+        run: echo "Hello world!"
