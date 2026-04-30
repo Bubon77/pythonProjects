@@ -9,7 +9,11 @@ jobs:
   run-first-command:
     runs-on: ubuntu-latest
     steps:
-      - name: 1
-        run: echo "Hello Dresden!"
-      - name: 2
-        run: echo "Pon4ik privet"
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
