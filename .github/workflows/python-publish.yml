@@ -9,5 +9,7 @@ jobs:
   run-first-command:
     runs-on: ubuntu-latest
     steps:
-      - name: Print echo
+      - name: 1
         run: echo "Hello Dresden!"
+      - name: 2
+        run: echo "Pon4ik privet"
