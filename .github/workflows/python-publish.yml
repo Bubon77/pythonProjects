@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print echo
-        run: echo "Hello world!"
+        run: echo "Hello Denis!"
