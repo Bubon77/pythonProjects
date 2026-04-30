@@ -30,7 +30,7 @@ def get_bible_quote(line):
     return text
 
 if __name__ == "__main__":
-    for counter in range(1,2):
-        quote = "John 8:"+str(counter)
+    for counter in range(15,16):
+        quote = "John 3:"+str(counter)
         text = get_bible_quote( quote )
         send_telegram_message(GROUP_ID,text)
